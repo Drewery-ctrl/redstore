@@ -25,7 +25,7 @@
             </div>
             <!--    Navigation -->
             <nav>
-                <ul>
+                <ul id="menuItems">
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Products</a></li>
                     <li><a href="#">About</a></li>
@@ -34,6 +34,7 @@
                 </ul>
             </nav>
             <img src="assets/images/cart.png" alt="cart" width="30px" height="30px">
+            <img src="assets/images/menu.png" alt="cart" class="menu-icon" onclick="menuToggle()">
         </div>
         <!--    Callout Section-->
         <div class="row">
@@ -247,6 +248,156 @@
     <!--Latest Products Section End-->
 </div>
 <!--Featured Products Section End-->
+
+<!--Offer Section-->
+<div class="offer">
+    <div class="small__container">
+        <div class="row">
+            <div class="col-2">
+                <img src="assets/images/exclusive.png" alt="exclusive" class="offer__img">
+            </div>
+            <div class="col-2">
+                <p>Exclusively Available on RedStore</p>
+                <h1>Smart Band 4</h1>
+                <small>
+                    The Mi Smart Band-4 features a 39.9% larger (than Mi Band-3) AMOLED color
+                    full-touch display with adjustable brightness, so everything is clear as can be
+                </small>
+                <a href="#" class="btn">Buy Now &#8594;</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Offer Section End-->
+
+<!--Testimonial Section-->
+<div class="testimonial">
+    <div class="small__container">
+        <div class="row">
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eius est impedit maxime minima
+                    natus officiis possimus repellat repellendus saepe.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="assets/images/user-1.png" alt="">
+                <h3>Sarah Parker</h3>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eius est impedit maxime minima
+                    natus officiis possimus repellat repellendus saepe.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="assets/images/user-2.png" alt="">
+                <h3>Mike Johnson</h3>
+            </div>
+            <div class="col-3">
+                <i class="fas fa-quote-left"></i>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid eius est impedit maxime minima
+                    natus officiis possimus repellat repellendus saepe.</p>
+                <div class="rating">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star-half-alt"></i>
+                    <i class="far fa-star"></i>
+                </div>
+                <img src="assets/images/user-3.png" alt="">
+                <h3>Hannah Manson</h3>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Testimonial Section Ends-->
+
+<!--brands Section-->
+<div class="brands">
+    <div class="small__container">
+        <div class="row">
+            <div class="col-5">
+                <img src="assets/images/logo-godrej.png" alt="logo__godrej">
+            </div>
+            <div class="col-5">
+                <img src="assets/images/logo-oppo.png" alt="logo__oppo">
+            </div>
+            <div class="col-5">
+                <img src="assets/images/logo-coca-cola.png" alt="logo__coca-cola">
+            </div>
+            <div class="col-5">
+                <img src="assets/images/logo-paypal.png" alt="logo__paypal">
+            </div>
+            <div class="col-5">
+                <img src="assets/images/logo-philips.png" alt="logo__philips">
+            </div>
+        </div>
+    </div>
+</div>
+<!--brands Section Ends -->
+
+<!--footer Section -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS</p>
+                <div class="app-logo">
+                    <img src="assets/images/play-store.png" alt="play-store">
+                    <img src="assets/images/app-store.png" alt="app-store">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="assets/images/logo-white.png" alt="logo_white">
+                <p>Our Pleasure Is To Sustainably Make The Pleasure And Benefits Of Sports Accessible</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - All Rights Reserved</p>
+    </div>
+</div>
+<!--footer Section Ends-->
+<!--JS for Toggle Menu -->
+<script>
+    let menuItems = document.getElementById('menuItems');
+    menuItems.style.maxHeight = "0px";
+
+    const menuToggle = () => {
+        if ( menuItems.style.maxHeight === "0px" ) {
+            menuItems.style.maxHeight = "200px";
+        } else {
+            menuItems.style.maxHeight = "0"
+        }
+    }
+</script>
 
 </body>
 </html>
