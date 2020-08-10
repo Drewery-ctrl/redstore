@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Products</title>
+</head>
+<body><!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--    Google Fonts (Poppins) -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+    <!--    Font Awesome Kit-->
+    <script src="https://kit.fontawesome.com/837bb336fd.js" crossorigin="anonymous"></script>
+    <!--    Stylesheet-->
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <title>RedStore | Ecommerce Website Design</title>
+</head>
+<body>
+<!--Navigation Section-->
+<div class="container">
+    <div class="navbar">
+        <!--            Logo-->
+        <div class="logo">
+            <img src="assets/images/logo.png" alt="logo" width="125px">
+        </div>
+        <!--    Navigation -->
+        <nav>
+            <ul id="menuItems">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Account</a></li>
+            </ul>
+        </nav>
+        <img src="assets/images/cart.png" alt="cart" width="30px" height="30px">
+        <img src="assets/images/menu.png" alt="cart" class="menu-icon" onclick="menuToggle()">
+    </div>
+</div>
+<!--Navigation Section End-->
+
+<!--Single Product Section-->
+<div class="small__container single__product">
+    <div class="row">
+        <div class="col-2">
+            <img src="assets/images/gallery-1.jpg" alt="gallery-1" width="100%" id="productImg">
+            <!--            Small Images Under Product Detail Image-->
+            <div class="small__img__row">
+                <div class="small__img__col">
+                    <img src="assets/images/gallery-1.jpg" alt="gallery" width="100%" class="small-img"/>
+                </div>
+                <div class="small__img__col">
+                    <img src="assets/images/gallery-2.jpg" alt="gallery" width="100%" class="small-img"/>
+                </div>
+                <div class="small__img__col">
+                    <img src="assets/images/gallery-3.jpg" alt="gallery" width="100%" class="small-img"/>
+                </div>
+                <div class="small__img__col">
+                    <img src="assets/images/gallery-4.jpg" alt="gallery" width="100%" class="small-img"/>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-2">
+            <p>Home / T-Shirt</p>
+            <h1>Red Printed T-Shirt by HRX</h1>
+            <h4>$50.00</h4>
+            <select>
+                <option value="">Select Size</option>
+                <option value="">XXL</option>
+                <option value="">XL</option>
+                <option value="">Large</option>
+                <option value="">Medium</option>
+                <option value="">Small</option>
+            </select>
+            <input type="number" value="1">
+            <a href="" class="btn">Add To Cart</a>
+
+            <h3>Product Details <i class="fas fa-indent"></i></h3>
+            <br>
+            <p>Give your Summer wardrobe style and upgrade with the HRX
+                Men's Active T-Shirt. Team it with a pair of shorts for your morning workout
+                or a denims for an evening out with the guys</p>
+        </div>
+    </div>
+</div>
+<!--Single Product Section Ends-->
+
+<!--Title-->
+<div class="small__container">
+    <div class="row row-2">
+        <h2>Related Products</h2>
+        <p>View More</p>
+    </div>
+</div>
+<!--Products-->
+<div class="small__container">
+    <div class="row">
+        <div class="col-4">
+            <img src="assets/images/product-1.jpg" alt="product-1">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <i class="far fa-star"></i>
+            </div>
+            <p>$50.00</p>
+        </div>
+        <div class="col-4">
+            <img src="assets/images/product-2.jpg" alt="product-2">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>$60.00</p>
+        </div>
+        <div class="col-4">
+            <img src="assets/images/product-3.jpg" alt="product-3">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+            </div>
+            <p>$100.00</p>
+        </div>
+        <div class="col-4">
+            <img src="assets/images/product-4.jpg" alt="product-4">
+            <h4>Red Printed T-Shirt</h4>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <p>$70.00</p>
+        </div>
+    </div>
+</div>
+
+<!--footer Section -->
+<div class="footer">
+    <div class="container">
+        <div class="row">
+            <div class="footer-col-1">
+                <h3>Download Our App</h3>
+                <p>Download App for Android and IOS</p>
+                <div class="app-logo">
+                    <img src="assets/images/play-store.png" alt="play-store">
+                    <img src="assets/images/app-store.png" alt="app-store">
+                </div>
+            </div>
+            <div class="footer-col-2">
+                <img src="assets/images/logo-white.png" alt="logo_white">
+                <p>Our Pleasure Is To Sustainably Make The Pleasure And Benefits Of Sports Accessible</p>
+            </div>
+            <div class="footer-col-3">
+                <h3>Useful Links</h3>
+                <ul>
+                    <li>Coupons</li>
+                    <li>Blog Post</li>
+                    <li>Return Policy</li>
+                    <li>Join Affiliate</li>
+                </ul>
+            </div>
+            <div class="footer-col-4">
+                <h3>Follow Us</h3>
+                <ul>
+                    <li>Facebook</li>
+                    <li>Twitter</li>
+                    <li>Instagram</li>
+                    <li>YouTube</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <p class="copyright">Copyright 2020 - All Rights Reserved</p>
+    </div>
+</div>
+<!--footer Section Ends-->
+<!--JS for Toggle Menu -->
+<script>
+    let menuItems = document.getElementById('menuItems');
+    menuItems.style.maxHeight = "0px";
+
+    const menuToggle = () => {
+        if ( menuItems.style.maxHeight === "0px" ) {
+            menuItems.style.maxHeight = "200px";
+        } else {
+            menuItems.style.maxHeight = "0"
+        }
+    }
+</script>
+
+<!--Js for product Gallery -->
+<script>
+    let productImg = document.getElementById("productImg");
+    let smallImage = document.getElementsByClassName("small-img");
+
+    smallImage[0].onclick = function () {
+        productImg.src = smallImage[0].src;
+    }
+
+    smallImage[1].onclick = function () {
+        productImg.src = smallImage[1].src;
+    }
+
+    smallImage[2].onclick = function () {
+        productImg.src = smallImage[2].src;
+    }
+    smallImage[3].onclick = function () {
+        productImg.src = smallImage[3].src;
+    }
+</script>
+</body>
+</html>
+
+
+</body>
+</html>
